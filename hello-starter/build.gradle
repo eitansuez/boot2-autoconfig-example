@@ -6,6 +6,8 @@ dependencies {
   compile 'org.springframework.boot:spring-boot-starter'
   compile project(':hello-lib')
 
+  annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
   testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
 
