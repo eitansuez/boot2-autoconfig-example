@@ -2,7 +2,6 @@ package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class HelloApplication {
@@ -11,8 +10,4 @@ public class HelloApplication {
     SpringApplication.run(HelloApplication.class, args);
   }
 
-  @Bean
-  HelloService helloService() {
-    return new ConsoleHelloService("Hello", "!");
-  }
 }
